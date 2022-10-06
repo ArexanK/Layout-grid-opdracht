@@ -6,13 +6,40 @@
     <title>Basic Layout 4</title>
     <link rel="stylesheet" href="../style.css" />
     <style>
-      /* Doe hier jouw ding! */
+      body {
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        grid-template-rows: 4fr 4fr;
+        grid-template-areas:
+          "main header"
+          "footer nav";
+        gap: 0.5em;
+      }
+
+      header {
+        grid-area: header;
+      }
+
+      nav {
+        grid-area: nav;
+      }
+
+      main {
+        grid-area: main;
+      }
+
+      footer {
+        grid-area: footer;
+      }
     </style>
   </head>
   <body id="basic-layout-4">
-    <header><h1>Basic Layout 4</h1></header>
-    <nav><a href="../index.html">Terug naar het overzicht</a></nav>
-    <main></main>
-    <footer></footer>
+    <header>
+      <h1>Basic Layout 4</h1>
+      header
+    </header>
+    <nav><a href="../index.html">Terug naar het overzicht</a>navbar</nav>
+    <main>main</main>
+    <footer>footer</footer>
   </body>
 </html>
