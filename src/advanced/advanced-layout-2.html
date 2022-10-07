@@ -6,13 +6,49 @@
     <title>Advanced Layout 2</title>
     <link rel="stylesheet" href="../style.css" />
     <style>
-      /* Doe hier jouw ding! */
+      body {
+        /*FAIL*/
+        display: grid;
+        margin: 0 auto;
+        max-width: 100vw;
+        height: 100vh;
+
+        grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr;
+        grid-template-areas:
+          "."
+          "header"
+          "."
+          "nav"
+          "."
+          "main main"
+          "footer footer";
+        gap: 0.5em;
+      }
+
+      header {
+        grid-area: header;
+      }
+
+      nav {
+        grid-area: nav;
+      }
+
+      main {
+        grid-area: main;
+      }
+
+      footer {
+        grid-area: footer;
+      }
     </style>
   </head>
   <body id="advanced-layout-2">
-    <header><h1>Advanced Layout 2</h1></header>
-    <nav><a href="../index.html">Terug naar het overzicht</a></nav>
-    <main></main>
-    <footer></footer>
+    <header>
+      <h1>Advanced Layout 2</h1>
+      header
+    </header>
+    <nav><a href="../index.html">Terug naar het overzicht</a>navbar</nav>
+    <main>main</main>
+    <footer>footer</footer>
   </body>
 </html>

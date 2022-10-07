@@ -6,13 +6,42 @@
     <title>Advanced Layout 5</title>
     <link rel="stylesheet" href="../style.css" />
     <style>
-      /* Doe hier jouw ding! */
+      body {
+        display: grid;
+        gap: 0.5em;
+        padding: 0.5em;
+        
+        grid-template-columns: 5fr 3fr 2fr 4fr 2fr;
+        grid-template-rows: 2fr 2fr 1fr 2fr 3fr 2fr;
+
+        
+      }
+
+      header {
+        grid-area: 1 / 4 / 3 / 6;
+        z-index: 4;
+      }
+
+      nav {
+        grid-area: 2 / 2 / 5 / 5;
+        z-index: 2;
+      }
+
+      main {
+        grid-area: 4 / 1 / 7 / 3;
+        z-index: 1;
+      }
+
+      footer {
+        grid-area: 4 / 1 / 7 / 3;
+        z-index: 2;
+      }
     </style>
   </head>
   <body id="advanced-layout-5">
-    <header><h1>Advanced Layout 5</h1></header>
-    <nav><a href="../index.html">Terug naar het overzicht</a></nav>
-    <main></main>
-    <footer></footer>
+    <header><h1>Advanced Layout 5</h1>header</header>
+    <nav><a href="../index.html">Terug naar het overzicht</a>navbar</nav>
+    <main><main/main>
+    <footer>footer</footer>
   </body>
 </html>
